@@ -1,12 +1,22 @@
+def calculador():
 
-def minha_funçao(valor1,valor2):
-    return valor1 + valor2
-while True:
-    
-    valor1 = int(input("valor1"))
+    while True:
 
-    valor2 = int(input("valor2"))
+        valor1 = input("Informe valor1: ").strip()
 
-resposta = minha_funçao(10,10)
+        valor2 = input("Informe valor2: ").strip()
 
-print(valor1, "+" , valor2, "=" ,resposta)
+        if len(valor1) == 0:
+            valor1 = input("Informe um valor válido para valor1: ").strip()
+
+        if len(valor2) == 0:
+            valor2 = input("Informe um valor válido para valor2: ").strip()
+
+        valor1 = int(valor1)
+        valor2 = int(valor2)
+
+        print("Você informou valor1 =", valor1)
+        print("Você informou valor2 =", valor2)
+
+
+calculador()
