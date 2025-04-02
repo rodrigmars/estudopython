@@ -1,8 +1,7 @@
-a = int(input("informe um valor  "))
-b = int(input("informe outro valor  "))
+def somar(senha,gmail):
+    
+    return senha,gmail
 
-c = int(input("informe um ultimo valor  "))
+resposta = somar("rdogaymes","rdo")
 
-total = a + b + c 
-
-print("total:",total)
+print(resposta)
